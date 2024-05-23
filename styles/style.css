@@ -57,53 +57,10 @@ header {
     margin: 1px 0;
   }
 }
-/*****************************************/
-.banner-container {
-  min-height: 85vh;
-}
-.banner-contents h1 {
-  font-size: 56px;
-  background-color: rgba(7, 101, 189, 0.8);
-  padding: 10px 20px;
-  font-family: "Handlee", cursive;
-  border-radius: 5px;
-}
-@media (max-width: 992px) {
-  .banner-contents h1 {
-    font-size: 40px;
-    padding: 5px 10px;
-  }
-}
-/* Header End */
 
 /* Main Starts */
-.title-button {
-  position: relative;
-}
-.title-button_icons {
-  position: absolute;
-  right: 12px;
-}
-main {
-  background-color: rgb(192, 192, 192);
-}
-.card {
-  border: 2px solid gray;
-  box-shadow: 2px 5px 5px rgba(100, 100, 100, 0.651);
-}
-.card hr {
-  border: 2px solid black;
-}
-.card-img iframe {
-  height: 320px;
-}
-.fa-arrow-up-right-from-square {
-  position: absolute;
-  font-size: 12px;
-  padding: 2px;
-  bottom: 23px;
-}
-/* Main Starts */
+
+/* Main Ends */
 
 /* Contact Starts */
 .contact {

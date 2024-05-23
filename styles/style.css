@@ -9,52 +9,76 @@
   font-weight: 400;
 }
 html {
-  background-color: #fafafa;
+  background-color: #ffffff;
   scroll-behavior: smooth;
   font-family: "Roboto", sans-serif;
 }
 body {
-  background-color: #fff;
+  background-color: #ffffff;
   margin: auto;
 }
 
 /* Header Start */
 header {
-  background-color: #1e2a2c;
+  background-color: #244855;
 }
 .navbar {
   padding: 10px 5%;
-  background-color: rgb(20, 40, 56);
+  background-color: #244855;
   min-height: 15vh;
 }
 .navbar-icon {
-  color: white;
+  color: #ffffff;
   background-color: transparent;
 }
 .navbar-brand img {
   height: 75px;
 }
 .nav-link {
-  color: white;
+  color: #ffffff;
+  display: inline-block;
+  position: relative;
   border-radius: 5px;
-  padding-left: 5px;
-  transition: 0.4s;
+  font-weight: bold;
 }
 .nav-link:hover {
-  background-color: #351ace;
-  color: white;
-  font-weight: bold;
-  margin: 0 5px 0 5px;
+  color: #ffffff;
+  padding-right: -10px;
 }
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffee00;
+  transform-origin: bottom right;
+  transition: transform 0.4s ease-out;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  background-color: #e64833;
+  transform-origin: bottom left;
+}
+
 @media (max-width: 992px) {
   .navbar-brand img {
     height: 60px;
   }
   .nav-link {
     background-color: #00000050;
+    display: block;
+    position: relative;
     padding: 0 auto;
     padding-left: 15px;
     margin: 1px 0;
+  }
+  .nav-link::after {
+    transition: transform 0.5s ease-out;
   }
 }
 
@@ -63,26 +87,17 @@ header {
 /* Main Ends */
 
 /* Contact Starts */
-.contact {
-  background-color: #5d52b9c5;
-  padding: 1% 5%;
-}
-.btn-container {
-  padding: 1% 5%;
-}
-.contact textarea {
-  max-height: 250px;
-}
+
 /* Contact ends */
 
 /* Footer starts */
 footer {
   padding: 1% 5%;
-  background-color: rgb(44, 44, 44);
-  color: white;
+  background-color: #874f41;
+  color: #fbe9d0;
 }
 footer .media-buttons i {
-  color: rgba(112, 157, 255, 0.8);
+  color: #fbe9d0;
   transition: 0.4s;
 }
 footer .media-buttons .home {
@@ -90,6 +105,14 @@ footer .media-buttons .home {
   margin: 0;
 }
 footer .media-buttons i:hover {
-  color: white;
+  color: #90aead;
 }
 /* Footer ends */
+
+/* #ffffff */
+/* #244855 */
+/* #90aead  */
+/* #e64833 */
+/* #874f41 */
+/* #ffee00 */
+/* #fbe9d0 */

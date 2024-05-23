@@ -1,15 +1,28 @@
 // Get all the buttons with the class "btn-primary"
-const buttons = document.querySelectorAll('.btn-primary');
+const buttons = document.querySelectorAll(".btn-primary");
 
 // Add a click event listener to each button
 buttons.forEach((button) => {
-    button.addEventListener('click', () => {
-        // Find the chevron icons within the button
-        const chevronDown = button.querySelector('.fa-chevron-down');
-        const chevronUp = button.querySelector('.fa-chevron-up');
+  button.addEventListener("click", () => {
+    // Find the chevron icons within the button
+    const chevronDown = button.querySelector(".fa-chevron-down");
+    const chevronUp = button.querySelector(".fa-chevron-up");
 
-        // Toggle the visibility of the chevron icons
-        chevronDown.classList.toggle('d-none');
-        chevronUp.classList.toggle('d-none');
-    });
+    // Toggle the visibility of the chevron icons
+    chevronDown.classList.toggle("d-none");
+    chevronUp.classList.toggle("d-none");
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var navbar = document.querySelector(".navbar");
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 50) {
+      // You can adjust the scroll threshold as needed
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  });
 });

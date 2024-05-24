@@ -55,22 +55,24 @@
           >
             <span><i class="fa-solid fa-bars"></i></span>
           </button>
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="index.html">
             <img src="images/halal-logo.png" alt="logo" />
           </a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-0 ms-lg-auto mb-2 mb-lg-0 text-white">
               <li class="nav-item pt-3 pt-lg-1">
-                <a class="nav-link" href="#">HOME</a>
+                <a class="nav-link" href="index.html">HOME</a>
               </li>
               <li class="nav-item pt-1 ms-lg-3">
-                <a class="nav-link" href="#index">TABEL OF CONTENTS</a>
+                <a class="nav-link" href="index.html#index"
+                  >TABEL OF CONTENTS</a
+                >
               </li>
               <li class="nav-item pt-1 ms-lg-3">
-                <a class="nav-link" href="#about">ABOUT US</a>
+                <a class="nav-link" href="about.html">ABOUT US</a>
               </li>
               <li class="nav-item pt-1 ms-lg-3">
-                <a class="nav-link" href="#contact">CONTACT</a>
+                <a class="nav-link" href="contact.html">CONTACT</a>
               </li>
             </ul>
           </div>
@@ -78,12 +80,31 @@
       </nav>
       <!-- Navbar Ends -->
       <!-- Banner Starts here -->
-      <div class="banner">
-        <div class="banner-heading">
-          <h1>
-            The world of<br />
-            <span>Muslims</span>
-          </h1>
+      <div class="banner-container">
+        <div class="banner">
+          <div class="banner-heading">
+            <h1>
+              The world of<br />
+              <span>Muslims</span>
+            </h1>
+          </div>
+          <div class="input-field">
+            <form action="https://formspree.io/f/xgegblrl" method="POST">
+              <label for="subscribe" class="banner__input_label"
+                >Stay Connected:
+              </label>
+              <br class="hidden-br" />
+              <input
+                type="email"
+                id="subscribe"
+                name="subscribe"
+                placeholder="Enter E-mail"
+                class="banner__input"
+                required
+              />
+              <button class="subscribe-btn" type="submit">Subscribe</button>
+            </form>
+          </div>
         </div>
       </div>
       <!-- Banner Ends here -->
@@ -148,7 +169,7 @@
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="index.html">
                   <i class="fa-solid fa-house"></i>
                 </a>
               </li>

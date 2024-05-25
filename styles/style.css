@@ -77,18 +77,21 @@ body {
   color: #ffffff;
   background-color: transparent;
 }
-.nav-link {
+.nav-link,
+.admin {
   color: #ffffff;
   display: inline-block;
   position: relative;
   border-radius: 5px;
   font-weight: bold;
 }
-.nav-link:hover {
+.nav-link:hover,
+.admin:hover {
   color: #ffffff;
   padding-right: -10px;
 }
-.nav-link::after {
+.nav-link::after,
+.admin::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -100,11 +103,22 @@ body {
   transform-origin: bottom right;
   transition: transform 0.4s ease-out;
 }
-.nav-link:hover::after {
+.nav-link:hover::after,
+.admin:hover::after {
   transform: scaleX(1);
   background-color: #e64833;
   transform-origin: bottom left;
 }
+.admin-black {
+  color: #333;
+  font-size: 25px;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+.admin-black:hover {
+  color: #555;
+}
+
 @media (max-width: 992px) {
   .navbar-brand img {
     height: 60px;

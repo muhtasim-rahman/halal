@@ -108,6 +108,7 @@
 .about-container .about-content .about-text p {
   font-size: 20px;
   margin-bottom: 20px;
+  color: #444;
 }
 
 .about-container .about-content .about-image img {
@@ -225,7 +226,7 @@
 
 .about-container .value-item p {
   font-size: 16px;
-  color: #777;
+  color: #555;
 }
 
 /* Responsive Design */

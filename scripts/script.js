@@ -14,6 +14,8 @@ buttons.forEach((button) => {
   });
 });
 
+// ----------------------------------------------------------------------
+
 document.addEventListener("DOMContentLoaded", function () {
   var navbar = document.querySelector(".navbar");
 
@@ -24,5 +26,22 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       navbar.classList.remove("scrolled");
     }
+  });
+});
+
+// Contact page javascript by (https://codepen.io/codewithshabbir)
+document.addEventListener("DOMContentLoaded", () => {
+  const inputs = document.querySelectorAll(".input");
+
+  inputs.forEach((input) => {
+    input.addEventListener("focus", () => {
+      input.parentNode.classList.add("focus");
+    });
+
+    input.addEventListener("blur", () => {
+      if (input.value === "") {
+        input.parentNode.classList.remove("focus");
+      }
+    });
   });
 });

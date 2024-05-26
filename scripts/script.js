@@ -45,3 +45,24 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+// Table of content JavaScript
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll(".toc-button");
+  const tables = document.querySelectorAll(".toc-content .table");
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", function () {
+      // Remove active class from all buttons
+      buttons.forEach((btn) => btn.classList.remove("active"));
+      // Add active class to the clicked button
+      this.classList.add("active");
+
+      // Hide all tables
+      tables.forEach((table) => table.classList.remove("active"));
+      // Show the target table
+      const targetTable = document.querySelector(this.dataset.target);
+      targetTable.classList.add("active");
+    });
+  });
+});

@@ -6,10 +6,31 @@
   border-top: 1px solid #ddd;
 }
 
+.toc-buttons-container {
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #244855 #eef1f5;
+}
+
+.toc-buttons-container::-webkit-scrollbar {
+  height: 10px;
+}
+
+.toc-buttons-container::-webkit-scrollbar-thumb {
+  background-color: #244855;
+  border-radius: 5px;
+}
+
+.toc-buttons-container::-webkit-scrollbar-track {
+  background-color: #eef1f5;
+}
+
 .toc-buttons {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
+  flex-wrap: nowrap;
+  gap: 10px;
 }
 
 .toc-button {
@@ -17,12 +38,12 @@
   color: #ffffff;
   border: none;
   padding: 12px 25px;
-  margin: 0 10px;
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;
   border-radius: 5px;
   transition: background-color 0.3s ease, transform 0.2s;
+  white-space: nowrap;
 }
 
 .toc-button.active,
@@ -76,11 +97,11 @@
 }
 
 .styled-table tbody tr {
-  border-bottom: 1px solid #adadad;
+  border-bottom: 1px solid #ddd;
 }
 
 .styled-table tbody tr:nth-of-type(even) {
-  background-color: #f1f1f1;
+  background-color: #f3f3f3;
 }
 
 .styled-table tbody tr:last-of-type {
@@ -100,6 +121,14 @@
   }
 
   .table h2 {
-    font-size: 22px;
+    font-size: 24px;
+  }
+
+  .toc-buttons {
+    gap: 5px;
+  }
+
+  .toc-buttons-container {
+    padding: 0 10px;
   }
 }

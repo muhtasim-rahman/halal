@@ -1,0 +1,105 @@
+/* style-index.css */
+
+#index {
+  padding: 40px 0;
+  background-color: #eef1f5;
+  border-top: 1px solid #ddd;
+}
+
+.toc-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.toc-button {
+  background-color: #244855;
+  color: #ffffff;
+  border: none;
+  padding: 12px 25px;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.toc-button.active,
+.toc-button:hover {
+  background-color: #e64833;
+  transform: scale(1.05);
+}
+
+.toc-content .table {
+  display: none;
+}
+
+.toc-content .table.active {
+  display: block;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.4s;
+}
+
+.toc-content .table.active:hover {
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.table h2 {
+  font-size: 28px;
+  color: #244855;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Table Styling */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.styled-table thead th {
+  background-color: #244855;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #adadad;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f1f1f1;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #244855;
+}
+
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #244855;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .toc-button {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+
+  .table h2 {
+    font-size: 22px;
+  }
+}

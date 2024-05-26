@@ -1,20 +1,4 @@
-// Get all the buttons with the class "btn-primary"
-const buttons = document.querySelectorAll(".btn-primary");
-
-// Add a click event listener to each button
-buttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    // Find the chevron icons within the button
-    const chevronDown = button.querySelector(".fa-chevron-down");
-    const chevronUp = button.querySelector(".fa-chevron-up");
-
-    // Toggle the visibility of the chevron icons
-    chevronDown.classList.toggle("d-none");
-    chevronUp.classList.toggle("d-none");
-  });
-});
-
-// ----------------------------------------------------------------------
+//* Navbar opacity decrease when the page is scrolling
 
 document.addEventListener("DOMContentLoaded", function () {
   var navbar = document.querySelector(".navbar");
@@ -29,7 +13,32 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Contact page javascript by (https://codepen.io/codewithshabbir)
+//* Banner input reset button script
+document.addEventListener("DOMContentLoaded", function () {
+  const emailInput = document.getElementById("subscribe");
+  const resetButton = document.querySelector(".reset-btn-icon");
+
+  // Initialize the reset button visibility based on the input field value
+  function toggleResetButton() {
+    if (emailInput.value.trim() !== "") {
+      resetButton.style.display = "inline-block";
+    } else {
+      resetButton.style.display = "none";
+    }
+  }
+
+  // Attach event listeners
+  emailInput.addEventListener("input", toggleResetButton);
+  resetButton.addEventListener("click", function () {
+    emailInput.value = ""; // Clear the input field
+    toggleResetButton(); // Update the button visibility
+  });
+
+  // Initial check
+  toggleResetButton();
+});
+
+//* Contact page javascript by (https://codepen.io/codewithshabbir)
 document.addEventListener("DOMContentLoaded", () => {
   const inputs = document.querySelectorAll(".input");
 
@@ -46,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Table of content JavaScript
+//* Table of content JavaScript
 document.addEventListener("DOMContentLoaded", function () {
   const buttons = document.querySelectorAll(".toc-button");
   const tables = document.querySelectorAll(".toc-content .table");

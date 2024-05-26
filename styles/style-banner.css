@@ -71,9 +71,10 @@
   color: #fff;
   text-transform: uppercase;
   border-radius: 0 7px 7px 0;
+  transition: 0.3s;
 }
 .subscribe-btn:hover {
-  background-color: #04131a;
+  background-color: #244855;
 }
 
 @media (max-width: 1300px) {

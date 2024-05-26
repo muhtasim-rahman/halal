@@ -6,23 +6,10 @@
   border-top: 1px solid #ddd;
 }
 
-.toc-buttons-container {
+.toc-buttons {
   overflow-x: auto;
   scrollbar-width: thin;
   scrollbar-color: #244855 #eef1f5;
-}
-
-.toc-buttons-container::-webkit-scrollbar {
-  height: 10px;
-}
-
-.toc-buttons-container::-webkit-scrollbar-thumb {
-  background-color: #244855;
-  border-radius: 5px;
-}
-
-.toc-buttons-container::-webkit-scrollbar-track {
-  background-color: #eef1f5;
 }
 
 .toc-buttons {
@@ -38,6 +25,7 @@
   color: #ffffff;
   border: none;
   padding: 12px 25px;
+  margin: 5px;
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;

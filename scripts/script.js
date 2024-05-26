@@ -50,6 +50,35 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", function () {
   const buttons = document.querySelectorAll(".toc-button");
   const tables = document.querySelectorAll(".toc-content .table");
+  const tocButtonsContainer = document.querySelector(".toc-buttons-container");
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+
+  tocButtonsContainer.addEventListener("mousedown", (e) => {
+    isDown = true;
+    tocButtonsContainer.classList.add("active");
+    startX = e.pageX - tocButtonsContainer.offsetLeft;
+    scrollLeft = tocButtonsContainer.scrollLeft;
+  });
+
+  tocButtonsContainer.addEventListener("mouseleave", () => {
+    isDown = false;
+    tocButtonsContainer.classList.remove("active");
+  });
+
+  tocButtonsContainer.addEventListener("mouseup", () => {
+    isDown = false;
+    tocButtonsContainer.classList.remove("active");
+  });
+
+  tocButtonsContainer.addEventListener("mousemove", (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - tocButtonsContainer.offsetLeft;
+    const walk = (x - startX) * 3; //scroll-fast
+    tocButtonsContainer.scrollLeft = scrollLeft - walk;
+  });
 
   buttons.forEach((button) => {
     button.addEventListener("click", function () {

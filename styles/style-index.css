@@ -1,21 +1,22 @@
-/* style-index.css */
-
 #index {
   padding: 40px 0;
   background-color: #eef1f5;
   border-top: 1px solid #ddd;
+  transition: 1s;
 }
 
 .toc-buttons {
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   scrollbar-width: thin;
-  scrollbar-color: #244855 #eef1f5;
+  padding: 20px 10px;
+  margin-bottom: 30px;
+  scrollbar-color: #244855 #e2e8f0bb;
 }
 
 .toc-buttons {
   display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
+  justify-content: flex-start;
   flex-wrap: nowrap;
   gap: 10px;
 }
@@ -25,19 +26,25 @@
   color: #ffffff;
   border: none;
   padding: 12px 25px;
-  margin: 5px;
+  margin-bottom: -5px;
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;
   border-radius: 5px;
-  transition: background-color 0.3s ease, transform 0.2s;
+  transition: background-color 0.4s ease, transform 0.2s;
   white-space: nowrap;
 }
 
-.toc-button.active,
-.toc-button:hover {
+.toc-button.active {
   background-color: #e64833;
   transform: scale(1.05);
+}
+
+.toc-button:hover {
+  background-color: #4588a0;
+}
+.toc-button.active:hover {
+  background-color: #e64833;
 }
 
 .toc-content .table {

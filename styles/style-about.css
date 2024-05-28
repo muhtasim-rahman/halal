@@ -64,20 +64,26 @@
   }
 }
 
-.about-container .about-content .about-text,
-.about-container .about-content .about-image {
+.about-container .about-content .row {
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+.about-container .about-content .row .about-text,
+.about-container .about-content .row .about-image {
   flex: 1;
 }
+
 @media (max-width: 900px) {
-  .about-container .about-content .about-text {
+  .about-container .about-content .row .about-text {
     flex: 4;
   }
-  .about-container .about-content .about-image {
+  .about-container .about-content .row .about-image {
     flex: 3;
   }
 }
 
-.about-container .about-content .about-text {
+.about-container .about-content .row .about-text {
   font-family: "Roboto", sans-serif;
   text-align: justify;
   color: #333;
@@ -98,31 +104,42 @@
   }
 }
 
-.about-container .about-content .about-text h3 {
+.about-container .about-content .row .about-text h3 {
   font-size: 30px;
   margin-bottom: 15px;
   border-left: 5px solid #00b44b;
   padding: 5px 15px;
 }
 
-.about-container .about-content .about-text p {
+.about-container .about-content .row .about-text p {
   font-size: 20px;
   margin-bottom: 20px;
   color: #444;
 }
 
-.about-container .about-content .about-image img {
+.about-container .about-content .row .about-image {
+  display: flex;
+  align-items: center; /* Center the image vertically */
+  justify-content: center; /* Center the image horizontally */
+}
+
+.about-container .about-content .row .about-image .image-wrapper {
+  text-align: center;
+}
+
+.about-container .about-content .row .about-image img {
   width: 100%;
   opacity: 0;
   animation: fadeIn 2s ease-in-out forwards;
   animation-delay: 1.5s;
+  align-items: center;
 }
 
-.about-container .about-content .about-image .about-image_credit {
+.about-container .about-content .row .about-image .about-image_credit {
   text-align: right;
 }
 
-.about-container .about-content .about-image .about-image_credit a {
+.about-container .about-content .row .about-image .about-image_credit a {
   color: #244855;
   font-size: 12px;
   text-decoration: none;
@@ -130,14 +147,14 @@
   animation-delay: 1s;
 }
 
-.about-container .about-content .about-image .about-image_credit a:hover {
+.about-container .about-content .row .about-image .about-image_credit a:hover {
   color: #112730;
   text-decoration: underline;
 }
 
 /* Our Values Section */
 .about-container .our-values {
-  background-image: url("../images/about-vartuse_banner.jpg");
+  background-image: url("../images/about-value_banner.jpg");
   background-size: cover;
   background-position: center;
   padding: 50px 5%;
@@ -230,8 +247,8 @@
 }
 
 /* Responsive Design */
-@media (max-width: 850px) {
-  .about-container .about-content {
+@media (max-width: 950px) {
+  .about-container .about-content .row {
     flex-direction: column;
   }
 
@@ -245,7 +262,7 @@
     font-size: 30px;
   }
 
-  .about-container .about-content .about-text h3 {
+  .about-container .about-content .row .about-text h3 {
     font-size: 22px;
   }
 

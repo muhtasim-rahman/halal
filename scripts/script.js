@@ -104,3 +104,31 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+//* TOC data pop-up
+document.addEventListener("DOMContentLoaded", function () {
+  const popupButtons = document.querySelectorAll(".popup-button");
+  const popups = document.querySelectorAll(".popup");
+  const popupCloses = document.querySelectorAll(".popup-close");
+
+  popupButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const popupId = this.getAttribute("data-popup");
+      document.getElementById(popupId).style.display = "flex";
+    });
+  });
+
+  popupCloses.forEach((close) => {
+    close.addEventListener("click", function () {
+      this.closest(".popup").style.display = "none";
+    });
+  });
+
+  window.addEventListener("click", function (e) {
+    popups.forEach((popup) => {
+      if (e.target == popup) {
+        popup.style.display = "none";
+      }
+    });
+  });
+});

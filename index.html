@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/style-banner.css" />
     <link rel="stylesheet" href="styles/style-index.css" />
+    <link rel="stylesheet" href="styles/style-popup.css" />
 
     <!-- Font Awesome CDN -->
     <link
@@ -136,95 +137,448 @@
               </button>
             </div>
             <div class="toc-content">
+              <!-- Table -1 -->
               <div id="table1" class="table active">
                 <h2>Iman (Faith)</h2>
                 <table class="styled-table">
                   <thead>
                     <tr>
-                      <th>Header 1</th>
+                      <th>Data</th>
+                      <th>Action</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td>Data 1</td>
+                      <td>
+                        <button class="popup-button" data-popup="t1_popup1">
+                          Details
+                        </button>
+                      </td>
                     </tr>
-                    <tr class="active-row">
+                    <tr>
+                      <td>Data 2</td>
+                      <td>
+                        <button class="popup-button" data-popup="t1_popup2">
+                          Details
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Data 3</td>
+                      <td>
+                        <button class="popup-button" data-popup="t1_popup3">
+                          Details
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
                       <td>Data 4</td>
+                      <td>
+                        <button class="popup-button" data-popup="t1_popup4">
+                          Details
+                        </button>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
-              <div id="table2" class="table">
-                <h2>Salah (Prayer)</h2>
+              <!-- Table -2 -->
+              <div id="table2" class="table active">
+                <h2>Iman (Faith)</h2>
                 <table class="styled-table">
                   <thead>
                     <tr>
-                      <th>Header 1</th>
+                      <th>Data</th>
+                      <th>Action</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td>Data 1</td>
+                      <td>
+                        <button class="popup-button" data-popup="t2_popup1">
+                          Details
+                        </button>
+                      </td>
                     </tr>
-                    <tr class="active-row">
+                    <tr>
+                      <td>Data 2</td>
+                      <td>
+                        <button class="popup-button" data-popup="t2_popup2">
+                          Details
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Data 3</td>
+                      <td>
+                        <button class="popup-button" data-popup="t2_popup3">
+                          Details
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
                       <td>Data 4</td>
+                      <td>
+                        <button class="popup-button" data-popup="t2_popup4">
+                          Details
+                        </button>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
-              <div id="table3" class="table">
-                <h2>Sawm (Fasting during Ramadan)</h2>
+              <!-- Table -3 -->
+              <div id="table3" class="table active">
+                <h2>Iman (Faith)</h2>
                 <table class="styled-table">
                   <thead>
                     <tr>
-                      <th>Header 1</th>
+                      <th>Data</th>
+                      <th>Action</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td>Data 1</td>
+                      <td>
+                        <button class="popup-button" data-popup="t3_popup1">
+                          Details
+                        </button>
+                      </td>
                     </tr>
-                    <tr class="active-row">
+                    <tr>
+                      <td>Data 2</td>
+                      <td>
+                        <button class="popup-button" data-popup="t3_popup2">
+                          Details
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Data 3</td>
+                      <td>
+                        <button class="popup-button" data-popup="t3_popup3">
+                          Details
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
                       <td>Data 4</td>
+                      <td>
+                        <button class="popup-button" data-popup="t3_popup4">
+                          Details
+                        </button>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
-              <div id="table4" class="table">
-                <h2>Zakah (Charity)</h2>
+              <!-- Table -4 -->
+              <div id="table4" class="table active">
+                <h2>Iman (Faith)</h2>
                 <table class="styled-table">
                   <thead>
                     <tr>
-                      <th>Header 1</th>
+                      <th>Data</th>
+                      <th>Action</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td>Data 1</td>
+                      <td>
+                        <button class="popup-button" data-popup="t4_popup1">
+                          Details
+                        </button>
+                      </td>
                     </tr>
-                    <tr class="active-row">
+                    <tr>
+                      <td>Data 2</td>
+                      <td>
+                        <button class="popup-button" data-popup="t4_popup2">
+                          Details
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Data 3</td>
+                      <td>
+                        <button class="popup-button" data-popup="t4_popup3">
+                          Details
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
                       <td>Data 4</td>
+                      <td>
+                        <button class="popup-button" data-popup="t4_popup4">
+                          Details
+                        </button>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
-              <div id="table5" class="table">
-                <h2>Hajj (Pilgrimage to Mecca)</h2>
+              <!-- Table -5 -->
+              <div id="table5" class="table active">
+                <h2>Iman (Faith)</h2>
                 <table class="styled-table">
                   <thead>
                     <tr>
-                      <th>Header 1</th>
+                      <th>Data</th>
+                      <th>Action</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td>Data 1</td>
+                      <td>
+                        <button class="popup-button" data-popup="t5_popup1">
+                          Details
+                        </button>
+                      </td>
                     </tr>
-                    <tr class="active-row">
+                    <tr>
+                      <td>Data 2</td>
+                      <td>
+                        <button class="popup-button" data-popup="t5_popup2">
+                          Details
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Data 3</td>
+                      <td>
+                        <button class="popup-button" data-popup="t5_popup3">
+                          Details
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
                       <td>Data 4</td>
+                      <td>
+                        <button class="popup-button" data-popup="t5_popup4">
+                          Details
+                        </button>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
+              </div>
+            </div>
+            <!-- Pop-up HTML -->
+            <div class="toc-popup">
+              <div class="toc-popup-t1">
+                <div class="popup" id="t1_popup1">
+                  <div class="popup-content">
+                    <span class="popup-close">&times;</span>
+                    <h2>Data 1 Details</h2>
+                    <p>
+                      This is the pop-up content for Data 1. Add any information
+                      you want here.
+                    </p>
+                  </div>
+                </div>
+                <div class="popup" id="t1_popup2">
+                  <div class="popup-content">
+                    <span class="popup-close">&times;</span>
+                    <h2>Data 2 Details</h2>
+                    <p>
+                      This is the pop-up content for Data 2. Add any information
+                      you want here.
+                    </p>
+                  </div>
+                </div>
+                <div class="popup" id="t1_popup3">
+                  <div class="popup-content">
+                    <span class="popup-close">&times;</span>
+                    <h2>Data 3 Details</h2>
+                    <p>
+                      This is the pop-up content for Data 3. Add any information
+                      you want here.
+                    </p>
+                  </div>
+                </div>
+                <div class="popup" id="t1_popup4">
+                  <div class="popup-content">
+                    <span class="popup-close">&times;</span>
+                    <h2>Data 4 Details</h2>
+                    <p>
+                      This is the pop-up content for Data 4. Add any information
+                      you want here.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="toc-popup-t2">
+                <div class="popup" id="t2_popup1">
+                  <div class="popup-content">
+                    <span class="popup-close">&times;</span>
+                    <h2>Data 1 Details</h2>
+                    <p>
+                      This is the pop-up content for Data 1. Add any information
+                      you want here.
+                    </p>
+                  </div>
+                </div>
+                <div class="popup" id="t2_popup2">
+                  <div class="popup-content">
+                    <span class="popup-close">&times;</span>
+                    <h2>Data 2 Details</h2>
+                    <p>
+                      This is the pop-up content for Data 2. Add any information
+                      you want here.
+                    </p>
+                  </div>
+                </div>
+                <div class="popup" id="t2_popup3">
+                  <div class="popup-content">
+                    <span class="popup-close">&times;</span>
+                    <h2>Data 3 Details</h2>
+                    <p>
+                      This is the pop-up content for Data 3. Add any information
+                      you want here.
+                    </p>
+                  </div>
+                </div>
+                <div class="popup" id="t2_popup4">
+                  <div class="popup-content">
+                    <span class="popup-close">&times;</span>
+                    <h2>Data 4 Details</h2>
+                    <p>
+                      This is the pop-up content for Data 4. Add any information
+                      you want here.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="toc-popup-t3">
+                <div class="popup" id="t3_popup1">
+                  <div class="popup-content">
+                    <span class="popup-close">&times;</span>
+                    <h2>Data 1 Details</h2>
+                    <p>
+                      This is the pop-up content for Data 1. Add any information
+                      you want here.
+                    </p>
+                  </div>
+                </div>
+                <div class="popup" id="t3_popup2">
+                  <div class="popup-content">
+                    <span class="popup-close">&times;</span>
+                    <h2>Data 2 Details</h2>
+                    <p>
+                      This is the pop-up content for Data 2. Add any information
+                      you want here.
+                    </p>
+                  </div>
+                </div>
+                <div class="popup" id="t3_popup3">
+                  <div class="popup-content">
+                    <span class="popup-close">&times;</span>
+                    <h2>Data 3 Details</h2>
+                    <p>
+                      This is the pop-up content for Data 3. Add any information
+                      you want here.
+                    </p>
+                  </div>
+                </div>
+                <div class="popup" id="t3_popup4">
+                  <div class="popup-content">
+                    <span class="popup-close">&times;</span>
+                    <h2>Data 4 Details</h2>
+                    <p>
+                      This is the pop-up content for Data 4. Add any information
+                      you want here.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="toc-popup-t4">
+                <div class="popup" id="t4_popup1">
+                  <div class="popup-content">
+                    <span class="popup-close">&times;</span>
+                    <h2>Data 1 Details</h2>
+                    <p>
+                      This is the pop-up content for Data 1. Add any information
+                      you want here.
+                    </p>
+                  </div>
+                </div>
+                <div class="popup" id="t4_popup2">
+                  <div class="popup-content">
+                    <span class="popup-close">&times;</span>
+                    <h2>Data 2 Details</h2>
+                    <p>
+                      This is the pop-up content for Data 2. Add any information
+                      you want here.
+                    </p>
+                  </div>
+                </div>
+                <div class="popup" id="t4_popup3">
+                  <div class="popup-content">
+                    <span class="popup-close">&times;</span>
+                    <h2>Data 3 Details</h2>
+                    <p>
+                      This is the pop-up content for Data 3. Add any information
+                      you want here.
+                    </p>
+                  </div>
+                </div>
+                <div class="popup" id="t4_popup4">
+                  <div class="popup-content">
+                    <span class="popup-close">&times;</span>
+                    <h2>Data 4 Details</h2>
+                    <p>
+                      This is the pop-up content for Data 4. Add any information
+                      you want here.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="toc-popup-t5">
+                <div class="popup" id="t5_popup1">
+                  <div class="popup-content">
+                    <span class="popup-close">&times;</span>
+                    <h2>Data 1 Details</h2>
+                    <p>
+                      This is the pop-up content for Data 1. Add any information
+                      you want here.
+                    </p>
+                  </div>
+                </div>
+                <div class="popup" id="t5_popup2">
+                  <div class="popup-content">
+                    <span class="popup-close">&times;</span>
+                    <h2>Data 2 Details</h2>
+                    <p>
+                      This is the pop-up content for Data 2. Add any information
+                      you want here.
+                    </p>
+                  </div>
+                </div>
+                <div class="popup" id="t5_popup3">
+                  <div class="popup-content">
+                    <span class="popup-close">&times;</span>
+                    <h2>Data 3 Details</h2>
+                    <p>
+                      This is the pop-up content for Data 3. Add any information
+                      you want here.
+                    </p>
+                  </div>
+                </div>
+                <div class="popup" id="t5_popup4">
+                  <div class="popup-content">
+                    <span class="popup-close">&times;</span>
+                    <h2>Data 4 Details</h2>
+                    <p>
+                      This is the pop-up content for Data 4. Add any information
+                      you want here.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

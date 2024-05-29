@@ -3,14 +3,9 @@
   border-top: 1px solid #ddd;
   transition: 1s;
 }
-
-.toc-buttons {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: thin;
-  padding: 20px 10px;
-  margin-bottom: 30px;
-  scrollbar-color: #244855 #ffffff00;
+.toc-container {
+  width: 85%;
+  margin: 0 auto;
 }
 
 .toc-buttons {
@@ -18,6 +13,14 @@
   justify-content: flex-start;
   flex-wrap: nowrap;
   gap: 10px;
+  justify-content: center;
+
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  padding: 15px 10px;
+  margin-bottom: 30px;
+  scrollbar-color: #244855 #ffffff00;
 }
 
 .toc-button {
@@ -125,6 +128,9 @@
 
 /* Responsive styles */
 @media (max-width: 768px) {
+  .toc-container {
+    width: 95%;
+  }
   .toc-button {
     padding: 10px 20px;
     font-size: 12px;
@@ -138,7 +144,7 @@
     gap: 5px;
   }
 
-  .toc-buttons-container {
+  .toc-container {
     padding: 0 10px;
   }
 }

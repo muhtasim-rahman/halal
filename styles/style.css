@@ -55,7 +55,7 @@ body.dark-mode {
   .styled-table tbody tr:last-of-type {
     border-bottom: 2px solid #143947;
   }
-  #index .container .toc-buttons-container .table {
+  #index .toc-buttons-container .table {
     background-color: #252525;
   }
   .table h2 {

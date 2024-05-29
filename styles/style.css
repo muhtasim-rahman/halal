@@ -125,7 +125,7 @@ body.dark-mode {
     filter: contrast(1.5);
   }
   .contact-container .form .contact-info .location {
-    filter: invert(90%);
+    filter: invert(75%);
   }
   .contact-container .form .contact-form .circle {
     background: rgba(255, 255, 255, 0.05);

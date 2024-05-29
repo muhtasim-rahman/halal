@@ -1,5 +1,6 @@
 .banner-container {
   min-height: 85vh;
+  filter: contrast(1.25);
   background-image: url("../images/Banner.jpg");
   background-position: right;
   background-size: cover;
@@ -118,7 +119,6 @@
   }
 
   .banner {
-    background-color: #0b3f0c8a;
     justify-content: center;
     text-align: center;
     border-radius: 10px;

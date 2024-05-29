@@ -1,6 +1,5 @@
 #index {
   padding: 40px 0;
-  background-color: #eef1f5;
   border-top: 1px solid #ddd;
   transition: 1s;
 }
@@ -11,7 +10,7 @@
   scrollbar-width: thin;
   padding: 20px 10px;
   margin-bottom: 30px;
-  scrollbar-color: #244855 #e2e8f0bb;
+  scrollbar-color: #244855 #ffffff00;
 }
 
 .toc-buttons {
@@ -54,14 +53,14 @@
 .toc-content .table.active {
   display: block;
   padding: 20px;
-  background: #ffffff;
+  background: #dddddd;
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: 0.4s;
 }
 
 .toc-content .table.active:hover {
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -80,7 +79,7 @@
 
 .styled-table thead th {
   background-color: #244855;
-  color: #ffffff;
+  color: #cdcdcd;
   text-align: center;
   font-weight: bold;
 }
@@ -92,11 +91,11 @@
 }
 
 .styled-table tbody tr {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ffffff;
 }
 
 .styled-table tbody tr:nth-of-type(even) {
-  background-color: #f3f3f3;
+  background-color: #cbcbcb;
 }
 
 .styled-table tbody tr:last-of-type {
@@ -106,6 +105,22 @@
 .styled-table tbody tr.active-row {
   font-weight: bold;
   color: #244855;
+}
+
+/* Style buttons in the second column */
+.styled-table .popup-button {
+  background-color: #08612d;
+  color: white;
+  width: 100%;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.styled-table .popup-button:hover {
+  background-color: #2c744a;
 }
 
 /* Responsive styles */

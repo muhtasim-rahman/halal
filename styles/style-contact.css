@@ -7,7 +7,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f9f9f9;
 }
 
 .contact-container .form {
@@ -76,6 +75,10 @@
   font-size: 18px;
 }
 
+.contact-container .form .contact-info .social-media .social-icons a:hover {
+  color: #aaaaaa;
+}
+
 .contact-container .form .contact-info .location {
   margin-top: 15px;
 }
@@ -102,7 +105,7 @@
 .contact-container .form .contact-form .circle.two {
   width: 80px;
   height: 80px;
-  bottom: -80px;
+  bottom: -40px;
   right: 90px;
 }
 

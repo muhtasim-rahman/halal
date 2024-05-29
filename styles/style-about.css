@@ -119,8 +119,8 @@
 
 .about-container .about-content .row .about-image {
   display: flex;
-  align-items: center; /* Center the image vertically */
-  justify-content: center; /* Center the image horizontally */
+  align-items: center;
+  justify-content: center;
 }
 
 .about-container .about-content .row .about-image .image-wrapper {

@@ -170,19 +170,24 @@
             >
               <h3 class="title">Contact us</h3>
               <div class="input-container">
-                <input type="text" name="name" class="input" />
+                <input type="text" name="name" class="input" required />
                 <label for="">Username</label>
               </div>
               <div class="input-container">
-                <input type="email" name="email" class="input" />
+                <input type="email" name="email" class="input" required />
                 <label for="">Email</label>
               </div>
               <div class="input-container">
-                <input type="text" name="Subject" class="input" />
+                <input type="text" name="Subject" class="input" required />
                 <label for="">Subject</label>
               </div>
               <div class="input-container textarea">
-                <textarea name="message" class="input"></textarea>
+                <textarea
+                  name="message"
+                  class="input"
+                  minlength="25"
+                  required
+                ></textarea>
                 <label for="">Message</label>
               </div>
               <div class="button-container">

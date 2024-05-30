@@ -161,6 +161,15 @@ body.dark-mode {
     ~ label {
     color: #b3ebff;
   }
+
+  .button-submit {
+    --text: #dddddd;
+    --plane: #1db61d;
+    --background: rgb(20, 20, 20);
+  }
+  .button-submit:hover {
+    color: #eeeeee;
+  }
 }
 /*********************************************************************************/
 /* Navbar */

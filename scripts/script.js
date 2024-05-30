@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
 //* Contact page Submit/clear button animation script br (https://codepen.io/milanraring)
 gsap.registerPlugin(MorphSVGPlugin);
 
-document.querySelectorAll(".button-submit").forEach((element) => {
+document.querySelectorAll(".button").forEach((element) => {
   let path = element.querySelector(".btn-layer path"),
     tl = gsap.timeline();
 

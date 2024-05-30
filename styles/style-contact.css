@@ -178,7 +178,7 @@
   outline: none;
 }
 
-.button-submit:hover .button-submit svg.btn-layer {
+.button-submit:hover {
   color: #2e2e2e;
 }
 
@@ -204,6 +204,10 @@
   fill: var(--plane);
   transform: translate3d(0, 0, 0);
   perspective: 500px;
+  transition: 0.3s;
+}
+.button-submit svg.plane:hover {
+  fill: #23d623;
 }
 
 .button-submit > ul {
@@ -220,15 +224,16 @@
   padding-left: 40px;
   font: 400 18px "Varela Round", sans-serif;
   transition: transform 0.3s ease 0s, opacity 0.3s ease 0.3s;
-  transition-delay: 2s;
 }
 
 .button-submit > ul > li:first-child {
   opacity: 1;
+  transition-delay: 0s;
 }
 
 .button-submit > ul > li:last-child {
   opacity: 0;
+  transition-delay: -1s;
 }
 
 .button-submit.active svg.plane {

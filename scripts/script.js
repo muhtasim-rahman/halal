@@ -55,6 +55,36 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+//* Contact form submit button script by ()
+// var wrapper = $("#button-wrapper");
+
+// $(".submit").click(function () {
+//   if (wrapper.not(".checked")) {
+//     wrapper.addClass("checked");
+//     setTimeout(function () {
+//       wrapper.removeClass("checked");
+//     }, 8000);
+//   }
+// });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contact-form");
+  const submitButton = document.querySelector(".submit");
+  const buttonWrapper = document.getElementById("button-wrapper");
+
+  submitButton.addEventListener("click", (e) => {
+    if (form.checkValidity()) {
+      e.preventDefault();
+      buttonWrapper.classList.add("checked");
+      setTimeout(() => {
+        form.submit();
+      }, 5000);
+    } else {
+      form.reportValidity();
+    }
+  });
+});
+
 //* Table of content JavaScript
 document.addEventListener("DOMContentLoaded", function () {
   const buttons = document.querySelectorAll(".toc-button");

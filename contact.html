@@ -17,6 +17,10 @@
     <!-- Styles -->
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/style-contact.css" />
+    <link rel="stylesheet" href="styles/style-submit_btn.css" />
+
+    <!-- Submit button by (https://codepen.io/claudiosc8) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Light/Dark mode design amd function -->
     <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
@@ -180,9 +184,27 @@
                   minlength="25"
                   required
                 ></textarea>
-                <label for="">Message</label>
+                <label for="message">Message</label>
               </div>
               <div class="button-container">
+                <div id="button-wrapper">
+                  <a class="submit">Submit</a>
+                  <div class="loader-wrapper">
+                    <span class="loader yellow"></span>
+                    <span class="loader pink"></span>
+                  </div>
+                  <span class="loader orange"></span>
+                  <div class="check-wrapper">
+                    <svg
+                      version="1.1"
+                      width="40px"
+                      height="40px"
+                      viewBox="0 0 64.5 37.4"
+                    >
+                      <polyline class="check" points="5,13 21.8,32.4 59.5,5 " />
+                    </svg>
+                  </div>
+                </div>
                 <button class="button-clear" type="reset">
                   <svg viewBox="0 0 448 512" class="svgIcon">
                     <path

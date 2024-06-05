@@ -13,13 +13,12 @@
   justify-content: flex-start;
   flex-wrap: nowrap;
   gap: 10px;
-  justify-content: center;
 
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: thin;
   padding: 15px 10px;
-  margin-bottom: 30px;
+  margin: 0 auto 30px auto;
   scrollbar-color: #244855 #ffffff00;
 }
 

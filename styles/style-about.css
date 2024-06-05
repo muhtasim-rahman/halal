@@ -66,7 +66,7 @@
 
 .about-container .about-content .row {
   display: flex;
-  align-items: center; /* Center items vertically */
+  align-items: center;
 }
 
 .about-container .about-content .row .about-text,
@@ -221,6 +221,12 @@
   }
   .about-container .value-item-3 {
     flex: 1;
+  }
+  .about-container .about-content .row .about-text h3 {
+    font-size: 25px;
+  }
+  .about-container .about-content .row .about-text p {
+    font-size: 16px;
   }
 }
 

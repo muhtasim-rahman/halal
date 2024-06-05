@@ -115,10 +115,8 @@
 
 @media (max-width: 1000px) {
   .banner {
+    background-color: #005a0867;
     text-align: center;
-  }
-
-  .banner {
     justify-content: center;
     text-align: center;
     border-radius: 10px;
